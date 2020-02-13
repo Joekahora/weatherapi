@@ -1,6 +1,6 @@
 function getCurrentWeather(){
     var cityName = $("#searchplace").val();
-    var weatherApiCall = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&&appid=f11adde7d4f7b71c1c1be26bc839a821"
+    var weatherApiCall = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&&appid=f11adde7d4f7b71c1c1be26bc839a821"
     $.getJSON(weatherApiCall, weatherData)
         function weatherData(currentWeatherData) {
             var cityName = currentWeatherData.name
